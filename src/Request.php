@@ -80,4 +80,13 @@ class Request
         return $_GET[$name] ?? null;
     }
 
+    /**
+     * Retrieves the data of a file upload with the given name.
+     * @param string $name The name of the file upload to retrieve the data from.
+     * @return mixed|null Returns the data of the file upload if it exists, or null otherwise.
+     */
+    public static function getFileData(string $name) : mixed {
+        return $_FILES[$name] ?? null;
+    }
+
 }
