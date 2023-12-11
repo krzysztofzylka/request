@@ -22,9 +22,13 @@ composer require krzysztofzylka/request
 ```
 ## Get POST data
 ```php
-\Krzysztofzylka\Request\Request::getPostData()
+\Krzysztofzylka\Request\Request::getPostData('name')
 ```
 ## Get GET data
 ```php
-\Krzysztofzylka\Request\Request::getGetData()
+\Krzysztofzylka\Request\Request::getGetData('name')
+```
+## Get FILES data
+```php
+\Krzysztofzylka\Request\Request::getFileData('name')
 ```
